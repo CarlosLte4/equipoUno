@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wood_floor_background">
+
+        <!-- Toolbar personalizada (HU 3.0 - fondo negro, bordes redondeados) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/toolbarCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="#000000"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="10dp">
+
+                <!-- Estrella: calificar app (HU 4.0) -->
+                <ImageButton
+                    android:id="@+id/btnRate"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Calificar"
+                    android:src="@drawable/ic_star"
+                    app:tint="#FF9800"/>
+
+                <!-- Audio on/off -->
+                <ImageButton
+                    android:id="@+id/btnAudio"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Audio"
+                    android:src="@drawable/ic_volume_on"
+                    app:tint="#FF9800"/>
+
+                <!-- Instrucciones (HU 5.0) -->
+                <ImageButton
+                    android:id="@+id/btnInstructions"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Instrucciones"
+                    android:src="@drawable/ic_instructions"
+                    app:tint="#FF9800"/>
+
+                <!-- Agregar retos (HU 6.0) -->
+                <ImageButton
+                    android:id="@+id/btnChallenges"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Retos"
+                    android:src="@drawable/ic_add_challenge"
+                    app:tint="#FF9800"/>
+
+                <!-- Compartir (HU 10) -->
+                <ImageButton
+                    android:id="@+id/btnShare"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Compartir"
+                    android:src="@drawable/ic_share"
+                    app:tint="#FF9800"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Botella en el centro (HU 2.0 - Criterio 4) -->
+        <FrameLayout
+            android:id="@+id/bottleContainer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/btnPresioname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbarCard">
+
+            <ImageView
+                android:id="@+id/bottleImage"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:contentDescription="Botella"
+                android:src="@drawable/bottle_icon"/>
+
+            <!-- Contador regresivo sobre la botella (HU 2.0 - Criterio 5) -->
+            <TextView
+                android:id="@+id/tvCountdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textColor="#FF9800"
+                android:textSize="64sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <!-- Botón parpadeante "Presióname" (HU 2.0 - Criterio 6) -->
+        <Button
+            android:id="@+id/btnPresioname"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#FF9800"
+            android:text="Presióname"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
