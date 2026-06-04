@@ -16,7 +16,7 @@
         >
 
         <ImageButton
-            android:id="@+id/btnIntructionsBack"
+            android:id="@+id/btnInstructionsBack"
             android:contentDescription="@string/Back_button"
             android:layout_width="35dp"
             android:layout_height="35dp"

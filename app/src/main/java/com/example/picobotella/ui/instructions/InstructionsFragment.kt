@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.picobotella.R
 import com.example.picobotella.databinding.FragmentInstructionsBinding
 
 class InstructionsFragment: Fragment() {
@@ -27,7 +26,7 @@ class InstructionsFragment: Fragment() {
     }
 
     private fun goBackHome() {
-        binding.btnIntructionsBack.setOnClickListener {
+        binding.btnInstructionsBack.setOnClickListener {
             findNavController().navigateUp()
         }
     }
