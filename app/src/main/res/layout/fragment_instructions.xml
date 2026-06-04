@@ -23,7 +23,7 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
             android:padding="0dp"
-            android:src="@drawable/outline_arrow_back_24" />
+            android:src="@drawable/back_btn" />
     </LinearLayout>
 
     <LinearLayout
@@ -36,7 +36,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reglas del Juego"
+            android:text="@string/Instructions_title"
             android:textColor="#EB2D2D"
             android:textSize="28sp"
             android:textStyle="bold" />

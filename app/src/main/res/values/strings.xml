@@ -9,4 +9,7 @@
         Gana el último jugador que no abandone el juego.
     </string>
     <string name="Back_button">Regresar</string>
+    <string name="Instructions_title">Reglas del Juego</string>
+    <string name="Challenges_title">Retos</string>
+    <string name="Add_one_challenge">Agregar un reto</string>
 </resources>

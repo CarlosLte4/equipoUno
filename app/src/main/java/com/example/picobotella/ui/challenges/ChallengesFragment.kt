@@ -1,4 +1,4 @@
-package com.example.picobotella.ui.instructions
+package com.example.picobotella.ui.challenges
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,17 +6,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.picobotella.R
-import com.example.picobotella.databinding.FragmentInstructionsBinding
+import com.example.picobotella.databinding.FragmentChallengesBinding
 
-class InstructionsFragment: Fragment() {
-    private lateinit var binding : FragmentInstructionsBinding;
+class ChallengesFragment: Fragment() {
+    private lateinit var binding : FragmentChallengesBinding;
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentInstructionsBinding.inflate(inflater)
+        binding = FragmentChallengesBinding.inflate(inflater)
         binding.lifecycleOwner = this
         return binding.root
     }
@@ -27,7 +26,7 @@ class InstructionsFragment: Fragment() {
     }
 
     private fun goBackHome() {
-        binding.btnIntructionsBack.setOnClickListener {
+        binding.btnChallengesBack.setOnClickListener {
             findNavController().navigateUp()
         }
     }
