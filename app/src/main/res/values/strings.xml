@@ -11,4 +11,16 @@
     <string name="share_app_message">App Pico Botella\nSolo los valientes lo juegan !!\nhttps://play.google.com/store/apps/details?id=com.nequi.MobileApp&amp;hl=es_419&amp;gl=es</string>
     <string name="share_app_title">Compartir aplicación</string>
     <string name="play_store_url">https://play.google.com/store/apps/details?id=com.nequi.MobileApp&amp;hl=es_419&amp;gl=es</string>
+    <string name="how_to_play_title">¿Cómo se juega?</string>
+    <string name="how_to_win_title">¿Quién gana?</string>
+    <string name="how_to_play_text">
+        Los jugadores forman un círculo y en el centro colocan el dispositivo móvil, luego tocan el botón parpadeante para girar la botella.\nEl jugador que señale la botella debe cumplir el reto que lanza la app, de lo contrario abandona el juego.
+    </string>
+    <string name="who_wins_text">
+        Gana el último jugador que no abandone el juego.
+    </string>
+    <string name="Back_button">Regresar</string>
+    <string name="Instructions_title">Reglas del Juego</string>
+    <string name="Challenges_title">Retos</string>
+    <string name="Add_one_challenge">Agregar un reto</string>
 </resources>
