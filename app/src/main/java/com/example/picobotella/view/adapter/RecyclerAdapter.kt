@@ -1,11 +1,11 @@
-package com.example.picobotella.ui.challenges
-
+package com.example.picobotella.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.picobotella.data.local.Challenge
+import com.example.picobotella.model.Challenge
 import com.example.picobotella.databinding.ItemChallengeBinding
+import com.example.picobotella.view.viewHolder.RecyclerViewHolder
 
 class RecyclerAdapter (private val challengesList:MutableList<Challenge>):
     RecyclerView.Adapter<RecyclerViewHolder>(){

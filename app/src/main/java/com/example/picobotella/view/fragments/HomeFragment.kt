@@ -1,4 +1,4 @@
-package com.example.picobotella.ui.home
+package com.example.picobotella.view.fragments
 
 import android.content.Intent
 import android.media.MediaPlayer
