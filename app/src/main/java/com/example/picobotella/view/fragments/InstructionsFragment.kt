@@ -1,4 +1,4 @@
-package com.example.picobotella.ui.instructions
+package com.example.picobotella.view.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

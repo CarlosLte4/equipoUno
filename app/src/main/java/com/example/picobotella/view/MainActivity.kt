@@ -1,7 +1,8 @@
-package com.example.picobotella
+package com.example.picobotella.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.picobotella.R
 import com.example.picobotella.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.example.picobotella.ui.challenges
+package com.example.picobotella.view.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,8 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.picobotella.data.local.Challenge
+import com.example.picobotella.model.Challenge
 import com.example.picobotella.databinding.FragmentChallengesBinding
+import com.example.picobotella.view.adapter.RecyclerAdapter
 
 class ChallengesFragment: Fragment() {
     private lateinit var binding : FragmentChallengesBinding;
