@@ -55,7 +55,7 @@
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="40dp"
             android:contentDescription="@string/add_one_challenge"
-            app:backgroundTint="#EB2D2D"
+            app:backgroundTint="@color/challenge_orange"
             app:elevation="6dp"
             app:fabSize="normal"
             app:layout_constraintBottom_toBottomOf="parent"

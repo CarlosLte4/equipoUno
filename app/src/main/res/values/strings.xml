@@ -28,4 +28,12 @@
     <string name="winner_title">Ganador</string>
     <string name="add_one_challenge">Agregar un reto</string>
     <string name="custom_dialogue_button">Cerrar</string>
+    <string name="add_challenge_dialog_title">Agregar reto</string>
+    <string name="edit_challenge_dialog_title">Editar reto</string>
+    <string name="challenge_input_hint">Escriba el reto</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Guardar</string>
+    <string name="delete_challenge_confirmation">&#191;Desea eliminar el siguiente reto?:</string>
+    <string name="no">NO</string>
+    <string name="yes">SI</string>
 </resources>
