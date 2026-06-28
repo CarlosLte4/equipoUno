@@ -6,6 +6,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
 import com.example.picobotella.model.Challenge
+import kotlinx.coroutines.flow.Flow
 
 
 @Dao
@@ -20,9 +21,8 @@ interface ChallengeDao {
     )
 
 
-    @Query("SELECT * FROM Challenge")
-    suspend fun getListChallenge():
-            MutableList<Challenge>
+    @Query("SELECT * FROM Challenge ORDER BY id DESC")
+    fun getListChallenge(): Flow<List<Challenge>>
 
 
     @Delete
